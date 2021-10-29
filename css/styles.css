@@ -8,11 +8,11 @@ body {
   }
   .about,
   .contact {
-    color: rgb(138, 108, 247);
+    color: rgb(158, 133, 252);
     text-align: center;
     font-family: cursive;
   }
-  p {
+  .p {
     border-radius: px;
     text-align: left;
   }
@@ -24,8 +24,7 @@ body {
   }
   .boxed1,
   .boxed2,
-  .boxed3,
-  .boxed4 {
+  .boxed3 {
     border: 5px solid rgb(81, 178, 235);
     border-radius: 20px;
     padding: 20px;
@@ -33,11 +32,20 @@ body {
     max-width: fit-content;
   }
   .boxed3 {
-    margin-left: 560px;
+    margin: 0 auto;
   }
   .boxed4 {
-    margin-left: 430px;
+      border: 5px solid rgb(81, 178, 235);
+      border-radius: 20px;
+      padding: 20px;
+      margin: 20px;
+      max-width: fit-content;
+      display: block;
   }
+  .card {
+    display: inline;
+  }
+  
   .favorite {
     color: rgb(233, 128, 189);
     text-align: center;
@@ -52,7 +60,7 @@ body {
   }
   .email-link,
   .social-link {
-    color: rgb(19, 19, 163);
+    color: rgb(102, 104, 247);
     display: inline;
     margin: 10px;
   }
@@ -68,4 +76,64 @@ body {
     background-color:rgb(255, 94, 0);
     color: white !important;
   }
+  .mountain {
+    display: block;
+    margin: 0 auto;
+  }
+  .cat1 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .cat2 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+  }
+  .card-text {
+    font-size: 30px;
+    font-family: cursive;
+    color: rgb(185, 24, 218);
+  }
+  .sentence {
+    text-align: center;
+  }
+  .hero {
+    padding: 160px 20px 225px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    height: 50%;
+    position:relative;
+    background-image: url(/images/mountain.jpg);
+  }
+  #return-to-top {
+    position: fixed; means that it will always be on the bottom right of the page
+    bottom: 20px;
+    right: 20px;
+    background: var(--primary-color); background color of the button
+    width: 50px;
+    height: 50px;
+    display: block; dont change this!
+    text-decoration: none;
+    border-radius: 35px;
+    display: none;
+  }
+  #return-to-top i { font awesome arrow CSS
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+  }
+  #return-to-top:hover { hover function of the button
+    background: var(--secondary-color);
+    transition: all 0.7s ease;
+  }
+  #return-to-top:hover i { hover function of the arrow
+    color: black;
+  }
+  
   

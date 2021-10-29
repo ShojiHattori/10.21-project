@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="/images/favicon.JPG">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,23 @@
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
+  <a href="javascript:" id="return-to-top"> 
+    <i class="fas fa-arrow-circle-up"></i></a> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script> 
+        <script>
+          $(window).scroll(function(){
+            if ($(this).scrollTop() >= 550) { 
+              $('#return-to-top').fadeIn(500); 
+            } else {
+              $('#return-to-top').fadeOut(500); 
+            }
+          });
+            $('#return-to-top').click(function(){ 
+              $('body,html').animate({
+                scrollTop : 0
+              }, 50);
+            });
+          </script> 
     <div class = "container">
         <nav class="navbar navbar-expand-lg navbar-light"
           style="background-color: #aeddae">
@@ -20,6 +38,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Homepage</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/about.html">About Me</a>
                 </li>
@@ -33,9 +54,6 @@
             </div>
           </div>
         </nav>
-    <a href="/hobbies.html" title="hobbies">Hobbies</a>
-    <a href="/portfolio.html" title="portfolio">Portfolio</a>
-    <a href="index.html" title="Homepage">Homepage</a>
     <h2 class="about">About me</h2>
     <div class="boxed1">
     <p>My name is Shoji Hattori. I graduated from British-American English 
@@ -45,6 +63,7 @@
         for cording.  
     </p>
     </div>
+    <img src="https://images.pexels.com/photos/3155894/pexels-photo-3155894.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="600" height="700" class="cat2">
     <h2 class="contact">Contact Me</h2>
     <div class="email-link social-link">
     <div class="row d-flex justify-content-sum-evenly">

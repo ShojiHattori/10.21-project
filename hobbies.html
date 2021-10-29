@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="/images/favicon.JPG">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,23 @@
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
+  <a href="javascript:" id="return-to-top"> 
+    <i class="fas fa-arrow-circle-up"></i></a> 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script> 
+        <script>
+          $(window).scroll(function(){
+            if ($(this).scrollTop() >= 550) { 
+              $('#return-to-top').fadeIn(500); 
+            } else {
+              $('#return-to-top').fadeOut(500); 
+            }
+          });
+            $('#return-to-top').click(function(){ 
+              $('body,html').animate({
+                scrollTop : 0
+              }, 50);
+            });
+          </script> 
     <div class = "container">
         <nav class="navbar navbar-expand-lg navbar-light"
           style="background-color: #aeddae">
@@ -20,6 +38,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Homepage</a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/about.html">About Me</a>
                 </li>
@@ -33,16 +54,18 @@
             </div>
           </div>
         </nav>
-    <a href="about.html" title="homepage">Homepage</a>
-    <a href="hobbies.html" title="hobbies">Hobbies</a>
-    <a href="portfolio.html" title="portflio">Portfolio</a>
     <h2 class="hobbies">Hobbies</h2>
     <div class="boxed2">
-
     <p>I like to read books or watch dramas in English when I have spare time.
         My favorite authors are Ernest Hemingway and D.H.Lawrence. I also like to read scientific books.
         For dramas, my favorite series is Virgin River and How I Met Your Mother. 
     </p>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://images.pexels.com/photos/4790622/pexels-photo-4790622.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="450" height="600" class="cat1" alt="cat photos">
+      <div class="card-body">
+        <p class="card-text">I'm a cat lover. I love animals but I like cats the most, because they are so calm and also they seems living free life.</p>
+      </div>
     </div>
     <h3 class="favorite">Favorite Music Artists</h3>
     <div class="boxed3">
